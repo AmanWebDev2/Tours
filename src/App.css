@@ -1,38 +1,105 @@
-.App {
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.title {
   text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.underline{
+  width: 20%;
+  height: 10px;
+  margin: 0 auto;
+  margin-top: -2rem;
+  background-color: aqua;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+article {
+  width: 80%;
+  /* height: 500px; */
+  margin: 3rem auto;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+}
+
+@media screen and (min-width:950px) {
+  article {
+    width: 600px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+footer{
+  padding:1rem;
+}
+
+article img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  min-width: 70%;
+}
+.tour-info {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tour-info h4{
+  font-size: 1.2rem;
+}
+
+.price{
+  color: royalblue;
+  background-color: rgb(218, 232, 232);
+  padding: .31rem 1rem;
+  border-radius: 3px;
+}
+
+.delete-btn {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid crimson;
+  padding: .51rem 1.2rem;
+  text-transform: capitalize;
+  color: crimson;
+  font-weight: bold;
+  font-size: 1rem;
+  outline: none;
+  border-radius: 7px;
+  background-color: white;
+  cursor: pointer;
+}
+
+
+.loader{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 5rem;
+}
+
+.toggle-read-more{
+  outline: none;
+  color: royalblue;
+  text-transform: capitalize;
+  background-color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+
+.refresh-btn{
+  border: none;
+  padding: 1rem 1.5rem;
+  width: 30%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 4px;
+  background-color: royalblue;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  cursor: pointer;
 }
